@@ -1,0 +1,42 @@
+html {
+  margin: 0 auto;
+  height: 100%
+}
+
+body { 
+  max-width: 1200px;
+  height: 100%; 
+  margin: 0 auto;
+  text-align: center;
+  padding: 0; 
+}
+
+input.main-input {
+  border: 1px solid #ddd;
+  width: 500px;
+  padding: 0.6em 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin: 3px 2px;
+  border-radius: 2px;
+}
+
+input.main-submit {
+  border: 1px solid #e03b13;
+  padding: 0.6em 1.2em;
+  background: #f04b23;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px 2px;
+  border-radius: 2px;
+}
+.main-container {
+  padding-top: 250px;
+}
