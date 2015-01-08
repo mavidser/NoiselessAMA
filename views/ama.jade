@@ -1,0 +1,24 @@
+html
+  head
+    meta(charset="utf-8")
+    title Noiseless AMA
+
+    link(rel='stylesheet', href='/styles/main.css')
+  body
+    .ama-container
+      for comment in result
+        if comment && comment.level
+          - for(var i=1;i<comment.level;i++) {
+            <div class="shift">
+          - }
+              <div class="comment">
+              if comment && comment.data
+                if comment.data.author == op
+                  <div class="ans">
+                p!= comment.data.body_html
+                if comment.data.author == op
+                  </div>
+              </div>
+          - for(var i=1;i<comment.level;i++) {
+            </div>
+          - }

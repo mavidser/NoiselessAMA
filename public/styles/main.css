@@ -7,7 +7,6 @@ body {
   max-width: 1200px;
   height: 100%; 
   margin: 0 auto;
-  text-align: center;
   padding: 0; 
 }
 
@@ -39,4 +38,33 @@ input.main-submit {
 }
 .main-container {
   padding-top: 250px;
+  text-align: center;
+  
+}
+
+
+/*-----------------------*/
+
+
+blockquote {
+  border-left: solid #aaa 5px;
+  margin: 0;
+  padding-left: 10px;
+}
+p {
+  margin: 15px 0;
+  padding: 0;
+}
+.ama-container {
+  padding: 20px;
+}
+.shift {
+  margin-left: 50px;
+}
+.comment {
+  padding: 0px 15px;
+  border: #eee solid 5px;
+}
+.ans {
+  background-color: #ccd;
 }

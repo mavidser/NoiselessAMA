@@ -14,7 +14,8 @@ app.set('port', process.env.PORT || 8000);
 
 var http = require('http').Server(app);
 app.get("/",routes.index);
-app.get("/ama?",routes.ama);
+app.get("/ama?",routes.submit);
+app.get("/ama/:id",routes.ama);
 
 http.listen(port,host,function(){
 console.log("Server listening on "+host+":"+port);
