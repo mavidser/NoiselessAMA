@@ -2,23 +2,29 @@ html
   head
     meta(charset="utf-8")
     title Noiseless AMA
-
     link(rel='stylesheet', href='/styles/main.css')
   body
+    .title-container
+      h1= title
     .ama-container
+      <div class="thread">
       for comment in result
         if comment && comment.level
+          if comment.level == 1
+            </div>
+            <div class="thread">
           - for(var i=1;i<comment.level;i++) {
             <div class="shift">
           - }
-              <div class="comment">
               if comment && comment.data
                 if comment.data.author == op
-                  <div class="ans">
+                  <div class="comment ans">
+                else
+                  <div class="comment">    
+                <div class="main">
                 p!= comment.data.body_html
-                if comment.data.author == op
-                  </div>
-              </div>
+                </div>
+                </div>
           - for(var i=1;i<comment.level;i++) {
             </div>
           - }

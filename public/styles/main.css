@@ -47,7 +47,7 @@ input.main-submit {
 
 
 blockquote {
-  border-left: solid #aaa 5px;
+  border-left: solid #ab5 5px;
   margin: 0;
   padding-left: 10px;
 }
@@ -55,16 +55,73 @@ p {
   margin: 15px 0;
   padding: 0;
 }
+.title-container {
+  padding: 0 20px;
+  padding-top: 20px;
+}
+.title-container > h1 {
+  font-weight: 300;
+  font-size: 2em;
+}
 .ama-container {
   padding: 20px;
+  padding-top: 0px; 
 }
 .shift {
-  margin-left: 50px;
+  margin-left: 50px;   
+}
+.thread {
+  margin: 50px 0;
 }
 .comment {
-  padding: 0px 15px;
-  border: #eee solid 5px;
+  margin: 2px 0;
+  border: #eef solid 1px;
+  /*border-radius: 5px;*/
+  border-left: #eef solid 10px;
+  background: #fafaff;
 }
 .ans {
-  background-color: #ccd;
+  border: #cd7 solid 1px;
+  border-left: #cd7 solid 10px;
+  background: #de8;
+}
+.comment::before {
+  display: table-cell;
+  background: #cd7;
+  text-align: center;
+  height: 100%;
+  width: 50px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ab5;
+  vertical-align: middle;
+}
+/*.ans::before {
+  content: "A";
+  display: table-cell;
+  background: #cd7;
+  text-align: center;
+  height: 100%;
+  width: 50px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ab5;
+  vertical-align: middle;
+}*/
+.main {
+  top: 0;
+  padding: 0px 15px;
+  display: table-cell;
+  position: relative;
+}
+
+
+/*-------------------------------*/
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+
 }
