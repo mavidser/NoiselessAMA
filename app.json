@@ -1,0 +1,6 @@
+{
+  "name": "Noiseless AMA",
+  "description": "Remove Noise from reddit AMAs",
+  "repository": "https://github.com/mavidser/NoiselessAMA",
+  "keywords": ["node", "express", "reddit", "ama"]
+}
