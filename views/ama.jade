@@ -13,7 +13,7 @@ html
           if comment.level == 1
             </div>
             <div class="thread">
-          - for(var i=1;i<comment.level;i++) {
+          - for(var i=0;i<comment.shift;i++) {
             <div class="shift">
           - }
               if comment && comment.data
@@ -22,9 +22,10 @@ html
                 else
                   <div class="comment">    
                 <div class="main">
+                //- p= comment.total_children
                 p!= comment.data.body_html
                 </div>
                 </div>
-          - for(var i=1;i<comment.level;i++) {
+          - for(var i=0;i<comment.shift;i++) {
             </div>
           - }
