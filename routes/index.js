@@ -13,7 +13,5 @@ exports.submit = function(req, res){
 };
 
 exports.ama = function(req, res){
-  require('../lib/reddit').parseAMA(req,res, function() {
-    console.log('callback');
-  });
+  require('../lib/reddit').parseAMA(req,res);
 };
