@@ -4,7 +4,8 @@ html {
 }
 
 body { 
-  max-width: 1200px;
+  font-family: 'Open Sans','Helvetica Neue','Segoe UI','Lucida Sans',sans-serif;
+  font-size: 12pt;
   height: 100%; 
   margin: 0 auto;
   padding: 0; 
@@ -56,16 +57,20 @@ p {
   padding: 0;
 }
 .title-container {
-  padding: 0 20px;
+  padding: 0 50px;
   padding-top: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .title-container > h1 {
   font-weight: 300;
   font-size: 2em;
 }
 .ama-container {
-  padding: 20px;
+  padding: 50px;
   padding-top: 0px; 
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .shift {
   margin-left: 50px;   
@@ -120,8 +125,18 @@ p {
 
 
 footer {
+  margin-top: 50px;
+  color: #555;
+  border-top: #aaa solid 5px;
   padding: 20px;
   text-align: center;
   background: #ddd;
+}
 
+footer > p > a,footer > p > a:visited,footer > p > a:hover {
+  color: #555;
+}
+
+a.source {
+  font-size: 0.8em;
 }
