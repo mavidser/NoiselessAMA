@@ -17,12 +17,12 @@ Deploying
 $ npm install
 $ node app.js
 ```
-
+a
 ###Heroku
 
 ```bash
 $ git add .
-$ git commit -m "Reddit OAuth keys added"
+$ git commit -m "commit message"
 $ git push heroku master
 ```
 
