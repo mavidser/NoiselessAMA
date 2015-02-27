@@ -17,7 +17,7 @@ html
             <div class="shift">
           - }
               if comment && comment.data
-                if comment.data.author in op
+                if comment.data.author in op || comment.data.author_flair_text in op
                   <div class="comment ans">
                 else
                   <div class="comment">    
@@ -25,6 +25,10 @@ html
                 //- p= comment.total_children
                 p!= comment.data.body_html
                 </div>
+                if multiA && comment.data.author in op
+                  .author
+                    p 
+                      span!= "– "+comment.data.author
                 </div>
           - for(var i=0;i<comment.shift;i++) {
             </div>
@@ -37,3 +41,10 @@ html
       | .
     p
       a.source(href='http://github.com/mavidser/NoiselessAMA') View Source on Github
+  script(type='text/javascript').
+    function switchToThread() {
+      document.getElementsByTagName("body")[0].className += " threadMode"
+    }
+    function switchToDefault() {
+      document.getElementsByTagName("body")[0].className -= " threadMode"
+    }
