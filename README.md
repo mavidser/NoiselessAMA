@@ -17,7 +17,7 @@ Deploying
 $ npm install
 $ node app.js
 ```
-a
+
 ###Heroku
 
 ```bash
