@@ -5,7 +5,8 @@ html
     link(rel='stylesheet', href='/styles/main.css')
   body
     .title-container
-      h1= title
+      h1
+        a(href=url, target="_blank")= title
     .ama-container
       <div class="thread">
       for comment in result
@@ -21,6 +22,9 @@ html
                   <div class="comment ans">
                 else
                   <div class="comment">    
+                .permalink-container  
+                  a(href=url+''+comment.data.id, target="_blank")
+                    img.permalink(src="/link.svg", onerror="this.src='link.png'", width="20px")
                 <div class="main">
                 //- p= comment.total_children
                 p!= comment.data.body_html
