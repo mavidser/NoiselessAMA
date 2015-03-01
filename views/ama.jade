@@ -4,6 +4,7 @@ html
     title Noiseless AMA
     link(rel='stylesheet', href='/styles/main.css')
   body
+    button.switch-view(type="button",onclick="changeView(this)") Switch to thread view
     .title-container
       h1
         a(href=url, target="_blank")= title
@@ -17,6 +18,9 @@ html
           - for(var i=0;i<comment.shift;i++) {
             <div class="shift">
           - }
+          - for(var i=1;i<comment.level;i++) {
+            <div class="level">
+          - }
               if comment && comment.data
                 if comment.data.author in op || comment.data.author_flair_text in op
                   <div class="comment ans">
@@ -27,6 +31,7 @@ html
                     img.permalink(src="/link.svg", onerror="this.src='link.png'", width="20px")
                 <div class="main">
                 //- p= comment.total_children
+                //- p= comment.level
                 p!= comment.data.body_html
                 </div>
                 if multiA && comment.data.author in op
@@ -34,6 +39,9 @@ html
                     p 
                       span!= "– "+comment.data.author
                 </div>
+          - for(var i=1;i<comment.level;i++) {
+            </div>
+          - }
           - for(var i=0;i<comment.shift;i++) {
             </div>
           - }
@@ -51,4 +59,13 @@ html
     }
     function switchToDefault() {
       document.getElementsByTagName("body")[0].className -= " threadMode"
+    }
+    function changeView(button) {
+      if (button.innerHTML==='Switch to thread view') {
+        switchToThread();
+        button.innerHTML = 'Switch to default view'
+      } else if (button.innerHTML==='Switch to default view') {
+        switchToDefault();
+        button.innerHTML = 'Switch to thread view'
+      }
     }

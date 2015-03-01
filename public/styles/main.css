@@ -85,8 +85,29 @@ p {
   margin: 0 auto;
 }
 .shift {
-  margin-left: 50px;   
+  margin-left: 25px;
+  -webkit-transition: margin-left 0.1s linear;
+  -moz-transition: margin-left 0.1s linear;
+  -ms-transition: margin-left 0.1s linear;
+  -o-transition: margin-left 0.1s linear;
+  transition: margin-left 0.1s linear;
 }
+.level {
+  margin-left: 0px;
+  -webkit-transition: margin-left 0.1s linear;
+  -moz-transition: margin-left 0.1s linear;
+  -ms-transition: margin-left 0.1s linear;
+  -o-transition: margin-left 0.1s linear;
+  transition: margin-left 0.1s linear;
+}
+
+body.threadMode .shift {
+  margin-left: 0 !important;
+}
+body.threadMode .level {
+  margin-left: 25px !important;
+}
+
 .thread {
   margin: 50px 0;
 }
@@ -158,6 +179,27 @@ p {
 }
 .comment:hover .permalink {
   display: block; 
+}
+.switch-view {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+  background: #ddd;
+  border-radius: 4px;
+  padding: 3px 10px;
+  border: 3px solid #bbb;
+  opacity: 0.75;
+  cursor: pointer;
+
+  -webkit-transition: opacity 0.1s linear;
+  -moz-transition: opacity 0.1s linear;
+  -ms-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+.switch-view:hover {
+  opacity: 1;
 }
 
 /*-------------------------------*/
