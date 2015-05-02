@@ -137,7 +137,7 @@ body.threadMode .level {
 }
 .comment::before {
   display: table-cell;
-  background: #cd7;
+  background: #ddd;
   text-align: center;
   height: 100%;
   width: 50px;
@@ -149,7 +149,7 @@ body.threadMode .level {
 /*.ans::before {
   content: "A";
   display: table-cell;
-  background: #cd7;
+  background: #ddd;
   text-align: center;
   height: 100%;
   width: 50px;
@@ -169,7 +169,7 @@ body.threadMode .level {
   padding-right: 15px;
 }
 .author span {
-  background: #cd7;
+  background: #ddd;
   padding: 0 10px;
   font-style: italic;
 }
