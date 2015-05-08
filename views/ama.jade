@@ -25,8 +25,8 @@ html
                 if comment.data.author in op || comment.data.author_flair_text in op
                   <div class="comment ans">
                 else
-                  <div class="comment">    
-                .permalink-container  
+                  <div class="comment">
+                .permalink-container
                   a(href=url+''+comment.data.id, target="_blank")
                     img.permalink(src="/link.svg", onerror="this.src='link.png'", width="20px")
                 <div class="main">
@@ -36,7 +36,7 @@ html
                 </div>
                 if multiA && comment.data.author in op
                   .author
-                    p 
+                    p
                       span!= "– "+comment.data.author
                 </div>
           - for(var i=1;i<comment.level;i++) {
@@ -48,11 +48,20 @@ html
       </div>
       </div>
   footer
-    p Created by 
+    p Created by
       a(href='http://sidverma.net') Sid Verma
       | .
     p
       a.source(href='http://github.com/mavidser/NoiselessAMA') View source on Github
+
+  //-Tracking code
+  script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-49246827-1', 'sidverma.net');
+    ga('send', 'pageview');
   script(type='text/javascript').
     function switchToThread() {
       document.getElementsByTagName("body")[0].className += " threadMode"
