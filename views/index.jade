@@ -5,16 +5,24 @@ html(lang="en")
     title Noiseless AMA
 
     link(rel='stylesheet', href='/styles/main.css')
-    link(href='http://fonts.googleapis.com/css?family=Raleway:400,600,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Raleway:400,600,700', rel='stylesheet', type='text/css')
     //- link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css')
 
     //- script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
     //- script(src='/scripts/app.js')
-    
+
   body
     .main-container
-      p(style='font-size:85px;margin-top:-85px;padding:20px;color:#ddd;font-family:"Raleway"') Noiseless 
+      p(style='font-size:85px;margin-top:-85px;padding:20px;color:#ddd;font-family:"Raleway"') Noiseless
         span(style='font-weight:600') AMA
       form(action='ama',method='get')
         input(type='text',placeholder='Enter the URL of the AMA',name='id').main-input
         input(type='submit',value='Remove Noise').main-submit
+      p#app-description Read any 
+        a(href='http://reddit.com/r/IAmA') reddit AMA
+        |  in a clean and simplified Q/A format.
+    .footer
+      p Created by 
+        a(href='http://sidverma.net') Sid Verma
+        | . 
+        a(href='http://github.com/mavidser/NoiselessAMA') View source on Github
