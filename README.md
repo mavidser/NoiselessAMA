@@ -25,7 +25,3 @@ $ git add .
 $ git commit -m "commit message"
 $ git push heroku master
 ```
-
-License
--------
-MIT
