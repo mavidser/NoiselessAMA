@@ -6,9 +6,12 @@ html {
 body { 
   font-family: 'Open Sans','Helvetica Neue','Segoe UI','Lucida Sans',sans-serif;
   font-size: 12pt;
-  height: 100%; 
+  min-height: 100%; 
   margin: 0 auto;
   padding: 0; 
+  position: relative;
+  top: 0;
+  bottom: 0;
 }
 
 input.main-input {
@@ -42,7 +45,20 @@ input.main-submit {
   text-align: center;
   
 }
-
+#app-description {
+  padding-top: 40px;
+  padding-bottom: 120px;
+  opacity: 0.7;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0.5;
+}
 
 /*-----------------------*/
 
@@ -212,6 +228,29 @@ body.threadMode .level {
 }
 .switch-view:hover {
   opacity: 1;
+}
+
+.home-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 20px;
+  background: #ddd;
+  /* border-radius: 4px; */
+  padding: 10px;
+  /* border: 3px solid #bbb; */
+  opacity: 0.75;
+  cursor: pointer;
+  /* width: 25px; */
+  /* height: 25px; */
+  vertical-align: middle;
+  line-height: 25px;
+}
+
+.home-icon {
+  vertical-align: middle;
+  width: 20px;
+  /* height: 20px; */
 }
 
 /*-------------------------------*/
